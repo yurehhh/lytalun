@@ -22,10 +22,17 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: white;
-      margin-left: 20px;
-    }
+  font-size: 2.5rem;
+  color: #0E0E0E;
+  margin-left: 20px;
+  text-shadow: 
+    -2px -2px 0 #DFDFDF,
+    2px -2px 0 #DFDFDF,
+    -2px 2px 0 #DFDFDF,
+    2px 2px 0 #DFDFDF,
+    0 0 4px #DFDFDF,
+    0 0 4px #DFDFDF;
+}
 
     nav {
       display: flex;
