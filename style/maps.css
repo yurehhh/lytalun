@@ -1,0 +1,81 @@
+ main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #DFDFDF;
+            margin-bottom: 20px;
+            text-shadow: 
+                -1px -1px 0 #123a84,
+                1px -1px 0 #123a84,
+                -1px 1px 0 #123a84,
+                1px 1px 0 #123a84;
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #123a84;
+            margin: 30px 0;
+        }
+        
+        p, .highlight {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #DFDFDF;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: white;
+        }
+        
+        .map-container {
+            margin: 40px 0;
+            border: 3px solid #123a84;
+            box-shadow: 0 0 20px rgba(18, 58, 132, 0.5);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        
+        .map-frame {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        
+        .opening-hours {
+            background: rgba(18, 58, 132, 0.2);
+            padding: 20px;
+            border-left: 4px solid #123a84;
+            margin: 30px 0;
+        }
+        
+        .opening-hours h3 {
+            color: #DFDFDF;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .opening-hours ul {
+            list-style-type: none;
+        }
+        
+        .opening-hours li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+        }
+        
+        .opening-hours .day {
+            font-weight: bold;
+            color: white;
+        }
+        
+        .opening-hours .time {
+            color: #DFDFDF;
+        }

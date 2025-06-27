@@ -3,26 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameos</title>    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/cameo.css">
+    <title>Cameos - LYTALUN</title>
+    <link rel="stylesheet" href="../style/universal.css">
+    <style>
+        main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #DFDFDF;
+            margin-bottom: 20px;
+            text-shadow: 
+                -1px -1px 0 #123a84,
+                1px -1px 0 #123a84,
+                -1px 1px 0 #123a84,
+                1px 1px 0 #123a84;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .cameo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .cameo-card {
+            background: rgba(18, 58, 132, 0.2);
+            border: 2px solid #123a84;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cameo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(18, 58, 132, 0.3);
+        }
+        
+        .cameo-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .cameo-info {
+            padding: 15px;
+        }
+        
+        .cameo-name {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .cameo-role {
+            color: #DFDFDF;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-
-     <header>
-    <h1>LYTALUN</h1>
-    <nav>
-      <a href="../index.html">Home</a>
-        <a href="cameo.html">Cameos</a>
-        <a href="showcase.html">Info</a>
-        <a href="maps.html">Location</a>
-        <a href="winkelmand.html">Tickets</a>
-    </nav>
-  </header>
+    <header>
+        <h1>LYTALUN</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cameo.html">Cameos</a>
+            <a href="showcase.html">Info</a>
+            <a href="maps.html">Location</a>
+            <a href="winkelmand.html">Tickets</a>
+        </nav>
+    </header>
     
+    <main>
+        <h2>Cameos</h2>
+        
+        
+        <div class="cameo-gallery">
+            
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/pO8segJqd4yS-m6RErHEeISqQXjLlsk_Vj_y9Fr3i-Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9lL2U4L0No/cmlzX0hlbXN3b3J0/aF9ieV9HYWdlX1Nr/aWRtb3JlXzJfJTI4/Y3JvcHBlZCUyOS5q/cGcvOTYwcHgtQ2hy/aXNfSGVtc3dvcnRo/X2J5X0dhZ2VfU2tp/ZG1vcmVfMl8lMjhj/cm9wcGVkJTI5Lmpw/Zw" alt="Cameo Appearance 1" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Chris Hemsworth</div>
+                    <div class="cameo-role">Thor Odinson</div>
+                </div>
+            </div>
+            
+            
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/3ZEcgfF-SNY1Jx3G0z3pUK3AbqFy28zjL8MadC2AZQw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbG91/ZGltYWdlczIuYnJv/YWR3YXl3b3JsZC5j/b20vaGVhZHNob3Rz/LzMwNjNzbS5qcGc_/Zm9ybWF0PWF1dG8m/d2lkdGg9NDY0" alt="Cameo Appearance 2" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Keith David</div>
+                    <div class="cameo-role">Keith David</div>
+                </div>
+            </div>
+            
+          
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/D6oCSyWHeFTgCnVHDhlYTZlEVJfg_Po12yA51YnzO4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzMw/MF9hbmRfaDQ1MF9i/ZXN0djIva0VHVTFn/R3lTSWU2M2x5TDdB/bndYRXc0clFuLmpw/Zw" alt="Cameo Appearance 3" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Grant Gustin</div>
+                    <div class="cameo-role">The Flash</div>
+                </div>
+            </div>
+            
+            
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/rnXOMEHAQS8_1jHEYSkQRBpI3Aij3ngDHGCCcvId6G4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTA5/ODg4NzQvcGhvdG8v/bG9zLWFuZ2VsZXMt/YWN0b3ItdG9iZXkt/bWFndWlyZS1hdHRl/bmRzLXRoZS1wcmVt/aWVyZS1vZi10aGUt/c29ueS1maWxtLXNw/aWRlci1tYW4tMi1v/bi1qdW5lLTIyLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1G/dEVHWTBwS0Zqamlf/MmdwUHRidlFQMW50/dUltMURsRWE0QmZI/eGo4TmM4PQ" alt="Cameo Appearance 4" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Tobey Maguire</div>
+                    <div class="cameo-role">Spider-Man</div>
+                </div>
 
-      
+                
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/ztg1D7bqscHWjfpQ9dVe-9zltrqOiOnuXmOnDetRQrs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9taWxh/LWt1bmlzLTI1NTg1/Mzc5LmpwZw" alt="Cameo Appearance 1" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Mila Kunis</div>
+                    <div class="cameo-role">Jackie Burkhart</div>
+                </div>
+            </div>
+            
+            
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/VU6A-l6vbu7AZbHp_TmyM6l977xly-1tM5EdWUedCY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VjL0FtYW5kYV9T/ZXlmcmllZC1jcm9w/LmpwZw" alt="Cameo Appearance 2" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Amanda Seyfried</div>
+                    <div class="cameo-role">Sophie Sheridan</div>
+                </div>
+            </div>
+            
+          
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/mAUpCFpDMLeEw30XNATYIWLRHuztdfweEKEfMaK_2v8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaW5kZXBlbmRl/bnQuY28udWsvMjAy/MS8wNi8yNy8wOS9u/ZXdGaWxlLTQuanBn/P3F1YWxpdHk9NzUm/d2lkdGg9NjQwJmNy/b3A9MzoyLHNtYXJ0/JmF1dG89d2VicA" alt="Cameo Appearance 3" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">Pierce Brosnan</div>
+                    <div class="cameo-role">James Bond</div>
+                </div>
+            </div>
+            
+            
+            <div class="cameo-card">
+                <img src="https://imgs.search.brave.com/vNwfNt-G7uGbe4POMXCsWCy0Rdx1Z26-6qP2jYyPFrs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1URm1aVFkx/TURndE1HWmxPUzAw/TkdGbExXSXhPVEV0/WlRrNE5UUTJOVE0y/TUdFMFhrRXlYa0Zx/Y0djQC5qcGc" alt="Cameo Appearance 4" class="cameo-image">
+                <div class="cameo-info">
+                    <div class="cameo-name">David Corenswet</div>
+                    <div class="cameo-role">Superman</div>
+                </div>
+        </div>
+    </main>
 </body>
 </html>

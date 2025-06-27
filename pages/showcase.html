@@ -3,21 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Showcase Information</title>
     <link rel="stylesheet" href="../style/universal.css">
+    <link rel="stylesheet" href="../style/showcase.css">
+    
 </head>
 <body>
-
     <header>
-    <h1>LYTALUN</h1>
-    <nav>
-    <a href="../index.html">Home</a>
-        <a href="cameo.html">Cameos</a>
-        <a href="showcase.html">Info</a>
-        <a href="maps.html">Location</a>
-        <a href="winkelmand.html">Tickets</a>
-    </nav>
-  </header>
+        <h1>LYTALUN</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cameo.html">Cameos</a>
+            <a href="showcase.html">Info</a>
+            <a href="maps.html">Location</a>
+            <a href="winkelmand.html">Tickets</a>
+        </nav>
+    </header>
     
+    <main>
+        
+        
+        <div class="showcase-container">
+            <div class="showcase-slides">
+                <div class="showcase-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feasyfairsassets.com%2Fsites%2F23%2F2022%2F10%2FHeroes-Dutch-Comic-Con-foto-Bart-Nijs_DSC0762.jpg&f=1&nofb=1&ipt=75745f7ea2a9101c230126433d6ff4df7e61f5f4813bfe3e05b09e2d83092288" alt="Showcase Image 1">
+                </div>
+                <div class="showcase-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feasyfairsassets.com%2Fsites%2F23%2F2024%2F02%2FHDCC-Summer-2023-foto-Bart-Nijs-fotografie-HDCC-summer-2023-foto-Bart-Nijs-fotografie-_J4A6363.jpg&f=1&nofb=1&ipt=25b6d6fd8f8e7feaed90296385b59dd0012c58a7366b35cffe170fd773ed7377" alt="Showcase Image 2">
+                </div>
+                <div class="showcase-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feasyfairsassets.com%2Fsites%2F23%2F2022%2F08%2FHeroes-Dutch-Comic-Con-foto-Bart-Nijs-Heroes-Dutch-Comic-Con-foto-Bart-Nijs_J4A0382.jpg&f=1&nofb=1&ipt=398ad899306dd3b97ce96a50173941ec15efffe7fe1ea16940f91abc8595fba2" alt="Showcase Image 3">
+                </div>
+            </div>
+            <div class="showcase-nav">
+                <button class="showcase-btn" onclick="prevSlide()">❮</button>
+                <button class="showcase-btn" onclick="nextSlide()">❯</button>
+            </div>
+            <div class="showcase-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <h2>Info over showcase</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </main>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.showcase-slides');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = document.querySelectorAll('.showcase-slide').length;
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
